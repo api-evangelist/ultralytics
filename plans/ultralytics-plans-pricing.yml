@@ -1,0 +1,25 @@
+generated: '2026-10-13'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://www.ultralytics.com/pricing
+sources:
+- https://www.ultralytics.com/pricing
+- https://docs.ultralytics.com/platform/account/billing.md
+name: Ultralytics pricing
+audience: business-product
+pricing_basis: per-seat
+plans:
+- name: Free
+  price_text: $0 per month
+  price: 0
+  billing_period: monthly
+  description: Build and explore with no subscription fee
+- name: Pro
+  price_text: $29 per seat/month
+  price: 29
+  billing_period: monthly
+  description: Scale with higher limits and monthly credits
+- name: Enterprise
+  price_text: Custom
+  description: Commercial licensing and dedicated support
+docs: https://www.ultralytics.com/pricing

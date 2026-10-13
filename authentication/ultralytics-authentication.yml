@@ -1,0 +1,19 @@
+generated: '2026-10-13'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://docs.ultralytics.com/platform/account/api-keys.md
+sources:
+- https://docs.ultralytics.com/platform/account/api-keys.md
+- https://docs.ultralytics.com/quickstart.md
+- https://docs.ultralytics.com/guides/conda-quickstart.md
+- https://docs.ultralytics.com/guides/docker-quickstart.md
+description: Ultralytics API authentication uses an API key passed as a Bearer token in the Authorization header.
+schemes:
+- type: http-bearer
+  name: Authorization
+  evidence: "Include the key in API requests:\n\n```bash\ncurl -H \"Authorization: Bearer YOUR_API_KEY\" \\\n  https://platform.ultralytics.com/api/...\n\
+    ```"
+  location: header
+  header: Authorization
+note: No OAuth2, API key query, or other authentication schemes are documented on the provided pages.
+docs: https://docs.ultralytics.com/platform/account/api-keys.md

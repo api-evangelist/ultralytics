@@ -1,0 +1,6 @@
+generated: '2026-10-13'
+method: probed
+generator: harvest-llms.py
+source: https://docs.ultralytics.com/llms.txt
+bytes: 151104
+note: saved verbatim; the provider's own document

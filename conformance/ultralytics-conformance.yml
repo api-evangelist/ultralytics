@@ -1,0 +1,38 @@
+generated: '2026-10-13'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://docs.ultralytics.com/guides/security-alarm-system.md
+sources:
+- https://docs.ultralytics.com/guides/security-alarm-system.md
+- https://docs.ultralytics.com/reference/solutions/security_alarm.md
+- https://docs.ultralytics.com/help/security.md
+- https://docs.ultralytics.com/help/privacy.md
+standards:
+- id: iso-27001
+  conforms: true
+  evidence: 'ISO/IEC 27001:2022: Certified ISMS.'
+- id: soc2
+  conforms: true
+  evidence: 'SOC 2 Type I: Independent attestation of the design of our security controls.'
+- id: hipaa
+  conforms: true
+  evidence: 'HIPAA: Completed a HIPAA Security Rule self-assessment (HIPAA has no official certification).'
+- id: gdpr
+  conforms: true
+  evidence: 'Privacy: GDPR and CCPA programs, with a Data Processing Agreement (DPA) available.'
+- id: ccpa
+  conforms: true
+  evidence: 'Privacy: GDPR and CCPA programs, with a Data Processing Agreement (DPA) available.'
+- id: openapi-3.1
+  conforms: true
+  evidence: the document declares 3.1.0
+- id: oauth2
+  conforms: false
+  evidence: 'securitySchemes: Authorization (http)'
+- id: rfc9457
+  conforms: false
+  evidence: no response declares application/problem+json
+- id: idempotency
+  conforms: false
+  evidence: no idempotency key parameter on mutating operations
+docs: https://docs.ultralytics.com/guides/security-alarm-system.md

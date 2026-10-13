@@ -1,23 +1,118 @@
 aid: ultralytics
 name: Ultralytics
-description: 'Ultralytics is a company surfaced via the API Evangelist harvest backlog (source: tag-qc)
-  and added to the network as a stub for full-pipeline profiling.'
+image: https://cdn.ul.run/i/c39ff384220f4734c78092eebe2f9c74.webp
+description: Ultralytics provides cutting‑edge computer‑vision solutions, including the popular YOLO family of models, a cloud platform for training,
+  annotation, and deployment, and extensive open‑source tools. The company offers a SaaS platform, on‑premise options, and integrates with major
+  cloud providers, serving industries such as retail, healthcare, automotive, and aerospace. Its mission is to democratize AI by delivering high‑performance,
+  easy‑to‑use vision AI products for developers and enterprises worldwide.
 url: https://raw.githubusercontent.com/api-evangelist/ultralytics/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:tag-qc
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-13 (modular-v1; was harvest)
 specificationVersion: '0.20'
 created: '2026-10-13'
 modified: '2026-10-13'
 tags:
-- Company
-apis: []
+- Computer Vision
+- AI
+- Machine Learning
+- Open Source
+- SaaS
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: TermsOfService
+  url: https://www.ultralytics.com/legal/terms-of-service
+- type: Plans
+  url: plans/ultralytics-plans-pricing.yml
+- type: Spectral
+  url: rules/ultralytics-rules.yml
+- type: Compliance
+  url: https://www.ultralytics.com/security
+- type: Authentication
+  url: authentication/ultralytics-authentication.yml
+- type: Conformance
+  url: conformance/ultralytics-conformance.yml
+- type: LLMsTxt
+  url: llms/ultralytics-llms.txt
+- type: WellKnown
+  url: well-known/ultralytics-well-known.yml
+- type: Hosts
+  url: hosts/ultralytics-hosts.yml
+- type: Vendors
+  url: vendors/ultralytics-vendors.yml
+- type: SDKs
+  url: packages/ultralytics-packages.yml
+- type: Packages
+  url: packages/ultralytics-packages.yml
+- type: Security
+  url: https://www.ultralytics.com/security
+- type: Roadmap
+  url: https://www.ultralytics.com/roadmap
+- type: Newsroom
+  url: https://www.ultralytics.com/news
+- type: ChangeLog
+  url: https://github.com/ultralytics/ultralytics/releases
+- type: TrustCenter
+  url: security/ultralytics-trust-center.yml
+- type: VulnerabilityDisclosure
+  url: security/ultralytics-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/ultralytics-domain-security.yml
 - type: Website
   url: https://www.ultralytics.com
+- type: Documentation
+  url: https://docs.ultralytics.com
+- type: APIReference
+  url: https://docs.ultralytics.com
+- type: GettingStarted
+  url: https://docs.ultralytics.com/quickstart
+- type: Support
+  url: https://www.ultralytics.com/contact
+- type: Blog
+  url: https://www.ultralytics.com/blog
+- type: GitHubOrganization
+  url: https://github.com/ultralytics
+- type: Pricing
+  url: https://www.ultralytics.com/pricing
+- type: SignUp
+  url: https://platform.ultralytics.com/signup
+- type: PrivacyPolicy
+  url: https://www.ultralytics.com/legal/privacy
+apis:
+- name: Ultralytics Platform API
+  description: Build, train, and deploy YOLO models via the Ultralytics Platform REST API.
+  humanURL: https://docs.ultralytics.com/platform/api
+  baseURL: https://platform.ultralytics.com
+  aid: ultralytics:ultralytics-platform-api
+- aid: ultralytics:ultralytics-api
+  name: Ultralytics API
+  description: 'Ultralytics API as documented publicly: 2 operations. Contract generated from the documentation by API Evangelist (2026-10-13);
+
+    not the provider''s own document.'
+  humanURL: https://docs.ultralytics.com/reference/utils/downloads
+  baseURL: https://ultralytics.com
+  properties:
+  - type: OpenAPI
+    url: openapi/_ae-authored/ultralytics-openapi-generated.yml
+    x-provenance: generated
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-10-13'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: the company publishes no developer documentation host and no machine-readable contract on its own domain
+  evidence:
+  - url: https://www.ultralytics.com
+    status: 200
+x-enrichment:
+  date: '2026-10-13'
+  status: enriched
+  artifacts_added: 17
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

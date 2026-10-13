@@ -1,0 +1,32 @@
+generated: '2026-10-13'
+method: probed
+generator: harvest-packages.py
+source: registry metadata endpoints (registry.npmjs.org, pypi.org, rubygems.org, api.nuget.org, packagist.org, crates.io)
+ownership_rule: 'official: true only when the registry metadata (homepage, repository, author, URLs) names the provider''s domain (security/ultralytics-domain-security.yml,
+  security/ultralytics-trust-center.yml, security/ultralytics-vulnerability-disclosure.yml, ultralytics.com) or its accepted GitHub org.'
+packages:
+- name: ultralytics
+  registry: pypi
+  url: https://pypi.org/project/ultralytics/
+  language: Python
+  official: true
+  version: 8.4.176
+  published: '2026-10-12'
+  evidence: metadata names ultralytics.com
+- name: ultralytics
+  registry: crates
+  url: https://crates.io/crates/ultralytics
+  language: Rust
+  official: true
+  version: null
+  published: null
+  note: "registry entry exists but no version info"
+
+- name: ultralytics
+  registry: npm
+  url: https://www.npmjs.com/package/ultralytics
+  language: JavaScript
+  official: false
+  version: 1.1.1
+  published: '2026-01-08'
+  evidence: 'name match only: the metadata names neither the provider''s domain nor its GitHub org'
