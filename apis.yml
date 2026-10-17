@@ -89,17 +89,26 @@ apis:
   humanURL: https://docs.ultralytics.com/platform/api
   baseURL: https://platform.ultralytics.com
   aid: ultralytics:ultralytics-platform-api
-- aid: ultralytics:ultralytics-api
-  name: Ultralytics API
-  description: 'Ultralytics API as documented publicly: 2 operations. Contract generated from the documentation by API Evangelist (2026-10-13);
-
-    not the provider''s own document.'
-  humanURL: https://docs.ultralytics.com/reference/utils/downloads
-  baseURL: https://ultralytics.com
+- aid: ultralytics:ultralytics-assets-api
+  name: Ultralytics Assets API
+  description: The Assets API from Ultralytics — 1 operation(s) for assets.
+  humanURL: https://docs.ultralytics.com/platform/api
+  baseURL: https://platform.ultralytics.com
+  tags:
+  - Assets
   properties:
   - type: OpenAPI
-    url: openapi/_ae-authored/ultralytics-openapi-generated.yml
-    x-provenance: generated
+    url: openapi/ultralytics-assets-api-openapi.yml
+- aid: ultralytics:ultralytics-ultralytics-api
+  name: Ultralytics Ultralytics API
+  description: The Ultralytics API from Ultralytics — 1 operation(s) for ultralytics.
+  humanURL: https://docs.ultralytics.com/platform/api
+  baseURL: https://platform.ultralytics.com
+  tags:
+  - Ultralytics
+  properties:
+  - type: OpenAPI
+    url: openapi/ultralytics-ultralytics-api-openapi.yml
 x-coverage:
   state: none
   reason: no-developer-program

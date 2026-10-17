@@ -1,0 +1,45 @@
+openapi: 3.2.0
+info:
+  title: Ultralytics Assets API
+  version: '2026-10-13'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-10-13: 2 operation(s) read from 1 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; Ultralytics has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 2
+    documentation: 0
+    pages-with-code: 1
+    pages-read: 1
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-10-13'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://docs.ultralytics.com/reference/utils/downloads
+servers:
+- url: https://ultralytics.com
+security:
+- Authorization: []
+tags:
+- name: Assets
+paths:
+  /assets/bus.jpg:
+    get:
+      operationId: get_assets_bus_jpg
+      tags:
+      - Assets
+      summary: GET /assets/bus.jpg
+      x-source: https://docs.ultralytics.com/reference/utils/downloads
+      responses:
+        '200':
+          description: Success (status as documented)
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl: bool = False,\n retry: int = 3,\n min_bytes: float = 1e0,\n exist_ok: bool = False,\n progress: bool = True,\n) -> Path \n Download a file from a URL with options for retrying, unzipping, and deleting the downloaded file. \n Partial downloads are detected using Content-Length validation and resumed with HTTP Range requests on retry. If url is an existing local file path, no download occurs and the "
+components:
+  securitySchemes:
+    Authorization:
+      type: http
+      scheme: bearer
+      x-source: https://docs.ultralytics.com/platform/account/api-keys.md
